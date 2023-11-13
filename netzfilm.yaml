@@ -57,7 +57,10 @@ spring:
   sql:
     init:
       mode: always # default with h2
- 
+  cloud:
+    discovery:
+      enabled: true
+
 management:
   endpoints:
     web:
