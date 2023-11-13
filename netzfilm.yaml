@@ -9,6 +9,11 @@ server:
     mime-types: application/json
   shutdown: graceful
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+
 spring:
   application:
     name: Netzfilm
@@ -52,13 +57,7 @@ spring:
   sql:
     init:
       mode: always # default with h2
-  boot:
-    admin:
-      client:
-        url: http://localhost:8080
-        instance:
-          prefer-ip: true
-
+ 
 management:
   endpoints:
     web:
