@@ -97,3 +97,7 @@ management:
 
 #springdoc:
 #  show-actuator: false
+
+exchange:
+  name:
+    billing: x.billing
