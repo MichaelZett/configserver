@@ -101,3 +101,10 @@ management:
 exchange:
   name:
     billing: x.billing
+    
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
